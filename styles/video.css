@@ -1,0 +1,88 @@
+.video-grid {
+  display: grid;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+@media (max-width: 703px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 704px) and (max-width: 1111px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1112px) and (max-width: 1615px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1616px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.thumbnail-row {
+  margin-bottom: 12px;
+  position: relative;
+  cursor: pointer;
+}
+
+.thumbnail {
+  width: 100%;
+  border-radius: 12px;
+  transition: border-radius 0.55s;
+}
+
+.thumbnail:hover {
+  border-radius: 0px;
+}
+
+.video-time {
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: black;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  cursor: pointer;
+}
+
+.video-info-grid:hover {
+}
+
+.profile-picture {
+  width: 36px;
+  border-radius: 50px;
+}
+
+.video-author {
+  margin-bottom: 4px;
+}
+
+.video-title {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.video-author,
+.video-stats {
+  font-size: 12px;
+  color: #aaaaaa;
+}

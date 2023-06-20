@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Clone</title>
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/video.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img
+          class="hamburger-menu"
+          src="assets/icons/hamburger-menu.svg"
+          alt="메뉴"
+        />
+        <img
+          class="youtube-logo"
+          src="assets/icons/youtube-logo.svg"
+          alt="유투브 로고"
+        />
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-icon" src="assets/icons/search.svg" alt="검색창" />
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img
+            class="voice-search-icon"
+            src="assets/icons/voice-search-icon.svg"
+            alt="음성 검색"
+          />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="assets/icons/upload.svg" alt="업로드" />
+          <div class="tooltip">Create</div>
+        </div>
+        <img
+          class="youtube-apps-icon"
+          src="assets/icons/youtube-apps.svg"
+          alt="유투브 앱"
+        />
+        <div class="notifications-icon-container">
+          <img
+            class="notifications-icon"
+            src="assets/icons/notifications.svg"
+            alt="알림"
+          />
+          <div class="notifications-count">1</div>
+        </div>
+        <img
+          class="current-user-picture"
+          src="assets/images/avatars/avatar-1.png"
+          alt="유저 아바타"
+        />
+      </div>
+    </header>
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="assets/icons/home.svg" alt="홈" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="assets/icons/explore.svg" alt="탐색" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="assets/icons/subscriptions.svg" alt="구독" />
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="assets/icons/originals.svg" alt="오리지널" />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="assets/icons/youtube-music.svg" alt="유튜브 뮤직" />
+        <div>Youtube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="assets/icons/library.svg" alt="라이브러리" />
+        <div>Library</div>
+      </div>
+    </nav>
+    <main>
+      <section class="video-grid"></section>
+    </main>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
